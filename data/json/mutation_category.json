@@ -92,6 +92,14 @@
 		"iv_message" : "You wonder if this is what rBGH feels like...",
 		"memorial_message" : "Stopped worrying and learned to love the cowbell."
 	},{
+    "type" : "mutation_category",
+		"id" : "mutation_horse",
+		"name" : "Equine",
+		"category" : "EQUINE",
+		"mutagen_message" : "You toss your head back as the mutagen goes down.",
+		"iv_message" : "You involuntarily rear back, nearmly losing the syringe in the process.",
+		"memorial_message" : "Ran free."
+  },{
 		"type" : "mutation_category",
 		"id" : "mutation_cephalopod",
 		"name" : "Cephalopod", "//" : "~Zork reference, but it's talking about your blood vessels",
