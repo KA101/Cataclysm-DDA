@@ -1926,7 +1926,7 @@
         "mixed_effect" : true,
         "description" : "Your feet have fused into hooves.  This allows kicking attacks to do much more damage, provides natural armor, and removes the need to wear shoes; however, you can not wear shoes of any kind.  Somewhat reduces wet effects.",
         "cancels" : ["PADDED_FEET", "LEG_TENTACLES", "RAP_TALONS"],
-        "category" : ["MUTCAT_CATTLE", "MUTCAT_CHIMERA"],
+        "category" : ["MUTCAT_CATTLE", "MUTCAT_CHIMERA", "MUTCAT_EQUINE"],
         "wet_protection":[
          {
             "part" : "FEET",
@@ -2023,7 +2023,7 @@
         "prereqs" : ["HERBIVORE"],
         "changes_to" : ["GRAZER"],
         "cancels" : ["CARNIVORE", "SAPROVORE"],
-        "category" : ["MUTCAT_CATTLE"],
+        "category" : ["MUTCAT_CATTLE", "MUTCAT_EQUINE"],
         "active"     :   true,
         "cost"       :    0
     },{
@@ -2033,9 +2033,9 @@
         "points" : 10,
         "description" : "You're accustomed to eating plants directly, and can get nutrition from grass as well as underbrush.  Eat either one by activating this,  standing over your target, and pressing E.",
         "prereqs" : ["RUMINANT"],
-        "threshreq" : ["THRESH_CATTLE"],
+        "threshreq" : ["THRESH_CATTLE", "THRESH_EQUINE"],
         "cancels" : ["CARNIVORE", "SAPROVORE"],
-        "category" : ["MUTCAT_CATTLE"],
+        "category" : ["MUTCAT_CATTLE", "MUTCAT_EQUINE"],
         "active"     :   true,
         "cost"       :    0
     },{
@@ -4234,6 +4234,15 @@
         "name" : "Bovine",
         "points" : 1,
         "description" : "Civilization collapsed? Great!  You and your kin will never have to worry about a slaughterhouse again.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },{
+        "type" : "mutation",
+        "id" : "THRESH_EQUINE",
+        "name" : "Equine",
+        "points" : 1,
+        "description" : "Now to run free, form a herd, and bring back the great herds.",
         "valid": false,
         "purifiable": false,
         "threshold": true
