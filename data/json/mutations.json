@@ -2578,7 +2578,7 @@
         "description" : "Your ears have extended into long, pointed ones, like those of a canine.  They enhance your hearing, allowing you to hear at greater distances.",
         "category" : ["MUTCAT_BEAST", "MUTCAT_CATTLE", "MUTCAT_CHIMERA"],
         "changes_to" : ["LUPINE_EARS"],
-        "cancels" : ["FELINE_EARS", "URSINE_EARS", "ELFA_EARS"]
+        "cancels" : ["FELINE_EARS", "URSINE_EARS", "ELFA_EARS", "EQUINE_EARS"]
     },{
         "type" : "mutation",
         "id" : "LUPINE_EARS",
@@ -2588,7 +2588,7 @@
         "ugliness" : 1,
         "description" : "Your hearing has evolved further and is now on par with wolves.  You can hear things significantly farther away.",
         "category" : ["MUTCAT_LUPINE"],
-        "cancels" : ["URSINE_EARS", "FELINE_EARS", "CANINE_EARS", "ELFA_EARS"]
+        "cancels" : ["URSINE_EARS", "FELINE_EARS", "CANINE_EARS", "ELFA_EARS", "EQUINE_EARS"]
     },{
         "type" : "mutation",
         "id" : "FELINE_EARS",
@@ -2598,7 +2598,7 @@
         "ugliness" : 0,
         "description" : "Your ears have extended into long, pointed, velvety ones, like those of a feline.  You find it easier to tune in on sounds from afar.",
         "category" : ["MUTCAT_FELINE"],
-        "cancels" : ["LUPINE_EARS", "URSINE_EARS", "CANINE_EARS", "ELFA_EARS"]
+        "cancels" : ["LUPINE_EARS", "URSINE_EARS", "CANINE_EARS", "ELFA_EARS", "EQUINE_EARS"]
     },{
         "type" : "mutation",
         "id" : "URSINE_EARS",
@@ -2608,7 +2608,17 @@
         "ugliness" : 1,
         "description" : "Your ears have grown longer and rounder, much like those of a bear.  You can hear things a little farther away.",
         "category" : ["MUTCAT_URSINE"],
-        "cancels" : ["LUPINE_EARS", "FELINE_EARS", "CANINE_EARS", "ELFA_EARS"]
+        "cancels" : ["LUPINE_EARS", "FELINE_EARS", "CANINE_EARS", "ELFA_EARS", "EQUINE_EARS"]
+    },{
+        "type" : "mutation",
+        "id" : "EQUINE_EARS",
+        "name" : "Equine Ears",
+        "points" : 1,
+        "visibility" : 4,
+        "ugliness" : 2,
+        "description" : "Your ears have grown longer and marginally more pointed, in equine fashion.  You can hear things a little farther away.",
+        "category" : ["MUTCAT_EQUINE"],
+        "cancels" : ["LUPINE_EARS", "FELINE_EARS", "CANINE_EARS", "ELFA_EARS", "URSINE_EARS"]
     },{
         "type" : "mutation",
         "id" : "ELFA_EARS",

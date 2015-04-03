@@ -13268,7 +13268,7 @@ float player::hearing_ability() const
     if( has_trait("CANINE_EARS") ) {
         volume_multiplier *= 1.5;
     }
-    if( has_trait("URSINE_EARS") || has_trait("FELINE_EARS") ) {
+    if( has_trait("URSINE_EARS") || has_trait("FELINE_EARS") || has_trait("EQUINE_EARS")) {
         volume_multiplier *= 1.25;
     }
     if( has_trait("LUPINE_EARS") ) {
