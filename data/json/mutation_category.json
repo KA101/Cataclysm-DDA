@@ -97,7 +97,7 @@
 		"name" : "Equine",
 		"category" : "EQUINE",
 		"mutagen_message" : "You toss your head back as the mutagen goes down.",
-		"iv_message" : "You involuntarily rear back, nearmly losing the syringe in the process.",
+		"iv_message" : "You involuntarily rear back, nearly losing the syringe in the process.",
 		"memorial_message" : "Ran free."
   },{
 		"type" : "mutation_category",
