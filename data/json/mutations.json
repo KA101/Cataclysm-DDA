@@ -3344,7 +3344,7 @@
         "visibility" : 5,
         "ugliness" : 4,
         "mixed_effect" : true,
-        "description" : "Your head has lenghtened and expanded to the point that it resembles that of a horse.  It prevents you from wearing mouthgear and opens you to with wit of folks asking \"why the long face?\".",
+        "description" : "Your head has lenghtened and expanded to the point that it resembles that of a horse.  It prevents you from wearing mouthgear and opens you to the wit of folks asking \"why the long face?\".",
         "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE_LONG", "MUZZLE"],
         "prereqs" : ["SNOUT"],
         "category" : ["MUTCAT_EQUINE"]
