@@ -3261,7 +3261,7 @@
         "visibility" : 4,
         "ugliness" : 3,
         "description" : "Your face and jaw have begun...changing.  Masks and such fit OK, but you're noticeably mutated.",
-        "changes_to" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE", "MUZZLE_BEAR", "MUZZLE_LONG", "MUZZLE_RAT"],
+        "changes_to" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE", "MUZZLE_BEAR", "MUZZLE_LONG", "MUZZLE_RAT", "MUZZLE_EQUINE"],
         "category" : ["MUTCAT_FELINE"]
     },{
         "type" : "mutation",
@@ -3272,7 +3272,7 @@
         "ugliness" : 6,
         "mixed_effect" : true,
         "description" : "Your face resembles that of a bull, with a significant snout.  It looks fearsome but prevents you from wearing mouthgear.",
-        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MUZZLE", "MUZZLE_LONG", "MUZZLE_BEAR"],
+        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MUZZLE", "MUZZLE_LONG", "MUZZLE_BEAR", "MUZZLE_EQUINE"],
         "prereqs" : ["SNOUT"],
         "category" : ["MUTCAT_CATTLE"]
     },{
@@ -3284,7 +3284,7 @@
         "ugliness" : 4,
         "mixed_effect" : true,
         "description" : "Your jaw and nose have extended into a wolfish muzzle.  It lends itself to biting in combat and looks impressive, but prevents you from wearing mouthgear.",
-        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE_LONG", "MUZZLE_BEAR"],
+        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE_LONG", "MUZZLE_BEAR", "MUZZLE_EQUINE"],
         "prereqs" : ["SNOUT"],
         "category" : ["MUTCAT_BEAST", "MUTCAT_LUPINE"]
     },{
@@ -3296,7 +3296,7 @@
         "ugliness" : 4,
         "mixed_effect" : true,
         "description" : "Your jaw and nose have extended into a bearish muzzle.  You could bite with it, and it looks impressive, but it prevents you from wearing mouthgear.",
-        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE_LONG", "MUZZLE"],
+        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE_LONG", "MUZZLE", "MUZZLE_EQUINE"],
         "prereqs" : ["SNOUT"],
         "category" : ["MUTCAT_URSINE"]
     },{
@@ -3308,7 +3308,7 @@
         "ugliness" : 4,
         "description" : "Your face and jaw have extended, giving you an alert and attentive appearance.",
         "prereqs" : ["SNOUT"],
-        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE", "MUZZLE_BEAR", "MUZZLE_LONG"],
+        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE", "MUZZLE_BEAR", "MUZZLE_LONG", "MUZZLE_EQUINE"],
         "category" : ["MUTCAT_RAT"]
     },{
         "type" : "mutation",
@@ -3319,7 +3319,7 @@
         "ugliness" : 8,
         "mixed_effect" : true,
         "description" : "Your face and jaws are a shorter version of those found on alligators.  They look NASTY-as do the bite wounds they can inflict-but prevent you from wearing mouthgear.",
-        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MUZZLE", "MINOTAUR", "MUZZLE_BEAR"],
+        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MUZZLE", "MINOTAUR", "MUZZLE_BEAR", "MUZZLE_EQUINE"],
         "prereqs" : ["SNOUT"],
         "category" : ["MUTCAT_LIZARD"]
     },{
@@ -3332,10 +3332,22 @@
         "description" : "You've gotten rid of that terribly imprecise mouth and now imbibe your food like a proper person.  Chewing was tiresome anyway.",
         "valid" : false,
         "purifiable" : false,
-        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "MINOTAUR", "MUZZLE_LONG", "MUZZLE", "MUZZLE_BEAR", "MANDIBLES", "MOUTH_TENTACLES"],
+        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "MINOTAUR", "MUZZLE_LONG", "MUZZLE", "MUZZLE_BEAR", "MANDIBLES", "MOUTH_TENTACLES",  "MUZZLE_EQUINE"],
         "prereqs" : ["EYEBULGE", "COMPOUND_EYES"],
         "threshreq" : ["THRESH_INSECT"],
         "category" : ["MUTCAT_INSECT"]
+    },{
+        "type" : "mutation",
+        "id" : "MUZZLE_EQUINE",
+        "name" : "Equine Muzzle",
+        "points" : -1,
+        "visibility" : 5,
+        "ugliness" : 4,
+        "mixed_effect" : true,
+        "description" : "Your head has lenghtened and expanded to the point that it resembles that of a horse.  It prevents you from wearing mouthgear and opens you to with wit of folks asking \"why the long face?\".",
+        "cancels" : ["BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE_LONG", "MUZZLE"],
+        "prereqs" : ["SNOUT"],
+        "category" : ["MUTCAT_EQUINE"]
     },{
         "type" : "mutation",
         "id" : "HOLLOW_BONES",
