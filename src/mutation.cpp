@@ -115,7 +115,7 @@ void Character::mutation_effect(std::string mut)
         bps.push_back(bp_mouth);
 
     } else if (mut == "MINOTAUR" || mut == "MUZZLE" || mut == "MUZZLE_BEAR" || mut == "MUZZLE_LONG" ||
-               mut == "PROBOSCIS" || mut == "MUZZLE_RAT") {
+               mut == "PROBOSCIS" || mut == "MUZZLE_RAT" || mut == "MUZZLE_EQUINE") {
         // Push off mouthwear
         bps.push_back(bp_mouth);
 
