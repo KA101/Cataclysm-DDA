@@ -1073,6 +1073,13 @@ void player::update_bodytemp()
             blood_loss = (100 - 100 * hp_cur[hp_head] / hp_max[hp_head]);
         }
         temp_conv[i] -= blood_loss * temp_conv[i] / 200; // 1% bodyheat lost per 2% hp lost
+        // MUTATED EXTREMITIES (these keep some parts warmer, so pre-equalization)
+        if (has_trait("HOOF_FUR")) {
+            // Furred fetlocks are basically there to fill in for gloves/boots.
+            if ( (i == bp_foot_r) || (i == bp_foot_l) || (i == bp_hand_r) || (i == bp_hand_l) ) {
+                temp_conv[i] += (temp_cur[i] > BODYTEMP_NORM ? 250 : 1000);
+            }
+        }
         // EQUALIZATION
         switch (i) {
         case bp_torso:

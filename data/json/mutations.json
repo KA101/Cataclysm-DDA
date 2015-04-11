@@ -3995,7 +3995,6 @@
         "fatigue"    :    true,
         "thirst"     :    true
     },{
-
         "type" : "mutation",
         "id" : "ARM_FEATHERS",
         "name" : "Feathered Arms",
@@ -4008,6 +4007,17 @@
             { "part" : "ARMS", "neutral" : 50 },
             { "part" : "HANDS", "neutral" : 10 }
         ]
+    },{
+        "type" : "mutation",
+        "id" : "HOOF_FUR",
+        "name" : "Furred Fetlocks",
+        "points" : 1,
+        "visibility" : 6,
+        "ugliness" : 1,
+        "description" : "Your fetlocks have a thick fur \"cuff\" about them, greatly warming your extremities.",
+        "prereqs" : ["HOOVES"],
+        "threshreq" : ["THRESH_EQUINE"],
+        "category" : ["MUTCAT_EQUINE"]
     },{
         "type" : "mutation",
         "id" : "INSECT_ARMS",
